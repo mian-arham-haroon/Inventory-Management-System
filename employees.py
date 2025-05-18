@@ -116,7 +116,7 @@ def update_employee(empid,name,email,gender,dob,contact,employment_type,educatio
 
 def connect_database():
     try:
-        connection=pymysql.connect(host='localhost',user='root',password='arham@12345678@')
+        connection=pymysql.connect(host='localhost',user='root',password='---------')
         cursor=connection.cursor()
     except:
         messagebox.showerror('Error','Database connectivity issue try again,\nplease open mysql command line client')
